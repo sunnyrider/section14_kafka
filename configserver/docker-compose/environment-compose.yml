@@ -349,7 +349,7 @@ services:
 #      service: network-deploy-service
 
 #  configserver:
-#    image: "sunnyrider/configserver:s13rabbit"
+#    image: "sunnyrider/configserver:s14kafka"
 #    container_name: configserver-ms
 #    ports:
 #      - "8071:8071"
@@ -370,7 +370,7 @@ services:
 #      OTEL_SERVICE_NAME: "configserver"
 #
 #  eurekaserver:
-#    image: "sunnyrider/eurekaserver:s13rabbit"
+#    image: "sunnyrider/eurekaserver:s14kafka"
 #    container_name: eurekaserver-ms
 #    ports:
 #      - "8070:8070"

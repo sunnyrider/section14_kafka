@@ -119,7 +119,7 @@
 				<version>3.4.2</version>
 				<configuration>
 					<to>
-						<image>sunnyrider/${project.artifactId}:s13rabbit</image>
+						<image>sunnyrider/${project.artifactId}:s14kafka</image>
 					</to>
 				</configuration>
 			</plugin>

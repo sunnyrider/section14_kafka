@@ -119,9 +119,14 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-stream-binder-kafka</artifactId>
+		</dependency>
+<!--
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-stream-binder-rabbit</artifactId>
 		</dependency>
-
+-->		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -141,7 +146,7 @@
 				<version>3.4.2</version>
 				<configuration>
 					<to>
-						<image>docker.io/sunnyrider/${project.artifactId}:s13rabbit</image>
+						<image>docker.io/sunnyrider/${project.artifactId}:s14kafka</image>
 					</to>
 				</configuration>
 			</plugin>

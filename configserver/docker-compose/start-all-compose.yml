@@ -344,7 +344,7 @@ services:
       service: network-deploy-service
 
   configserver:
-    image: "sunnyrider/configserver:s13rabbit"
+    image: "sunnyrider/configserver:s14kafka"
     container_name: configserver-ms
     ports:
       - "8071:8071"
@@ -365,7 +365,7 @@ services:
       OTEL_SERVICE_NAME: "configserver"
 
   eurekaserver:
-    image: "sunnyrider/eurekaserver:s13rabbit"
+    image: "sunnyrider/eurekaserver:s14kafka"
     container_name: eurekaserver-ms
     ports:
       - "8070:8070"
@@ -386,7 +386,7 @@ services:
       OTEL_SERVICE_NAME: "eurekaserver"
 
   accounts:
-    image: "sunnyrider/accounts:s13rabbit"
+    image: "sunnyrider/accounts:s14kafka"
     container_name: accounts-ms
 #    ports:
 #      - "8083:8083"
@@ -413,7 +413,7 @@ services:
       service: microservice-eureka-config
 
   loans:
-    image: "sunnyrider/loans:s13rabbit"
+    image: "sunnyrider/loans:s14kafka"
     container_name: loans-ms
 #    ports:
 #      - "8090:8090"
@@ -439,7 +439,7 @@ services:
       service: microservice-eureka-config
 
   cards:
-    image: "sunnyrider/cards:s13rabbit"
+    image: "sunnyrider/cards:s14kafka"
     container_name: cards-ms
 #    ports:
 #      - "9000:9000"
@@ -465,7 +465,7 @@ services:
       service: microservice-eureka-config
 
   message:
-    image: "sunnyrider/message:s13rabbit"
+    image: "sunnyrider/message:s14kafka"
     container_name: message-ms
     depends_on:
       rabbit:
@@ -477,7 +477,7 @@ services:
       service: network-deploy-service
 
   gatewayserver:
-    image: "sunnyrider/gatewayserver:s13rabbit"
+    image: "sunnyrider/gatewayserver:s14kafka"
     container_name: gatewayserver-ms
     ports:
       - "8072:8072"
